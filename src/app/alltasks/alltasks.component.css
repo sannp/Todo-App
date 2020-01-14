@@ -1,0 +1,19 @@
+table {
+    border-collapse: collapse;
+}
+td, th {
+    padding: 10px;
+    border: 1px solid black;
+}
+td a {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px;
+}
+.edit {
+    background: lightgreen;
+}
+.delete {
+    background: red;
+    color: white;
+}

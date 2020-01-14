@@ -1,0 +1,17 @@
+<form  #taskData = "ngForm" (ngSubmit) = "addTask(taskData.value)">
+    <p>
+      <label for="">Task Name</label><input type="text" name="tname" ngModel/>
+    </p>
+    <p>
+      <label for="">Task Description</label><input type="text" name="tdes"  ngModel/>
+    </p>
+    <p>
+      <label for="">Start Date</label><input type="date" name="tsdate" ngModel />
+    </p>
+    <p>
+      <label for="">End Date</label><input type="date"  name="tedate" ngModel/>
+    </p>
+    <p>
+      <input type="submit">
+    </p>
+  </form>

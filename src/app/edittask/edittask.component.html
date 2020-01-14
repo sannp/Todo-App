@@ -1,0 +1,20 @@
+<form  #taskData = "ngForm" (ngSubmit) = "updateTask(taskData.value)">
+    <p>
+        <label for="">Task Id</label><input type="number" name="tid" [(ngModel)]="tid"/>
+    </p>
+    <p>
+      <label for="">Task Name</label><input type="text" name="tname" [(ngModel)]="tname"/>
+    </p>
+    <p>
+      <label for="">Task Description</label><input type="text" name="tdes"  [(ngModel)]="tdes"/>
+    </p>
+    <p>
+      <label for="">Start Date</label><input type="date" name="tsdate" [(ngModel)]="tsdate" />
+    </p>
+    <p>
+      <label for="">End Date</label><input type="date"  name="tedate" [(ngModel)]="tedate" />
+    </p>
+    <p>
+      <input type="submit">
+    </p>
+  </form>

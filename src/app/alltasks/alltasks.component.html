@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Operations</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let task of tasks">
+            <td>{{task.tid}}</td>
+            <td>{{task.tname}}</td>
+            <td>{{task.tdesc}}</td>
+            <td>{{task.tsdate}}</td>
+            <td>{{task.tedate}}</td>
+            <td>
+                <a routerLink="/task/{{task.tid}}"class="edit">Edit</a>
+                <a (click)="deleteTask(task.tid)"  class="delete">Delete</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
